@@ -15,7 +15,7 @@ from the top left to the bottom right by only moving right and down.
 '''
 
 
-def minimal_path_sum_two_way(filename):
+def minimal_path_sum_two_ways(filename):
     result = []
 
     for line in list(open(filename)):
@@ -25,7 +25,6 @@ def minimal_path_sum_two_way(filename):
             for i in range(1, len(numbers)):
                result.append(result[i - 1] + numbers[i])
             continue
-            print(result)
 
         temporary_result = []
 
@@ -40,5 +39,5 @@ def minimal_path_sum_two_way(filename):
 
 
 
-print(minimal_path_sum_two_way("problem_0081_5x5.txt"))  # 2427
-print(minimal_path_sum_two_way("problem_0081_80x80.txt"))  # 427337
+print(minimal_path_sum_two_ways("problem_0081_5x5.txt"))  # 2427
+print(minimal_path_sum_two_ways("problem_0081_80x80.txt"))  # 427337
